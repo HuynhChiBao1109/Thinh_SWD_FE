@@ -1,0 +1,7 @@
+.form_group {
+    margin: 20px 0 20px 0;
+}
+
+.form_group label {
+    width: 20% !important;
+}

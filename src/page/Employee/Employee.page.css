@@ -1,0 +1,13 @@
+.Employee_Page {
+    margin-left: 20% !important;
+    margin-top: 20px
+}
+
+.Employee_Page h1 {
+    text-align: left;
+    margin-bottom: 20px
+}
+
+.Employee_page_button_create {
+    text-align: right;
+}

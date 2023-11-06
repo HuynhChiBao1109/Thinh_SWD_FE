@@ -1,0 +1,48 @@
+.login_form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form_group {
+    margin-bottom: 15px;
+}
+
+.form_control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.text-danger {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.button_login {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button_login:hover {
+    background-color: #2980b9;
+}
+
+.google_icon {
+    width: 20px;
+    margin-top: 40px;
+}

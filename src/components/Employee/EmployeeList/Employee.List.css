@@ -1,0 +1,50 @@
+table {
+    border-collapse: collapse;
+    width: 89%;
+}
+
+thead {
+    background-color: #706f6e;
+    color: white;
+    border-left: 1px solid black;
+}
+
+th {
+    padding: 5px;
+}
+
+tbody {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+td:last-child {
+    text-transform: capitalize;
+}
+
+td button {
+    margin: 0 0 0 10px;
+}
+
+
+.user_action_edit {
+    margin: 0 10px 0 10px;
+}
+
+.Employee_SearchBar {
+    margin: 20px 0 20px 0;
+    width: 90%;
+}
+
+.Employee_List_Paging {
+    margin: 20px 0 20px 0;
+}
+
+.Employee_footer h3 {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.Employee_footer {
+    margin: 20px 0 20px 0 !important;
+}

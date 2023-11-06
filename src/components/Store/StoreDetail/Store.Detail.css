@@ -1,0 +1,16 @@
+.store_detail_item {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.Store_Detail_Page {
+    width: 50% !important;
+}
+
+.store_detail_item label {
+    width: 30%;
+}
+
+.store_detail_update_button {
+    margin: 20px 0 0 0;
+}

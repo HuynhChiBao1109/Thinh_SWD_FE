@@ -1,0 +1,12 @@
+.Category_Detail_Page {
+    width: 30% !important;
+}
+
+.category_detail_item {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.category_detail_item label {
+    width: 30%;
+}

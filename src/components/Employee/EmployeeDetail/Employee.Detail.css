@@ -1,0 +1,16 @@
+.employee_detail_item {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.employee_detail_item label {
+    width: 20% !important;
+}
+
+.Employee_Detail {
+    width: 30% !important;
+}
+
+.employee_button_delete {
+    margin-top: 20px;
+}

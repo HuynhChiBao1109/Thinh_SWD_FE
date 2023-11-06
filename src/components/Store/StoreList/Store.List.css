@@ -1,0 +1,29 @@
+.Store_List_Search {
+    margin: 20px 0 20px 0;
+    width: 96%;
+}
+
+.store_list_item_content {
+    text-align: left;
+    margin: 20px 0 20px 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(207, 210, 213);
+    color: black;
+    width: 88%;
+}
+
+.store_list_item_content :hover {
+    color: #FF814C;
+    cursor: pointer;
+}
+
+.Store_footer h3 {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.Store_footer {
+    margin: 20px 0 20px 0 !important;
+}

@@ -1,0 +1,17 @@
+.Cell_list {
+    margin: 20px 0 20px 0;
+    width: 98%;
+}
+
+.Cell_footer {
+    margin: 20px 0 20px 0 !important;
+}
+
+.Cell_footer h3 {
+    text-align: left;
+}
+
+.Cell_SearchBar {
+    width: 91%;
+    margin: 20px 0 20px 0;
+}

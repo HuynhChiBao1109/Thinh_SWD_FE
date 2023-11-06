@@ -1,0 +1,16 @@
+.customer_Detail {
+    width: 30% !important;
+}
+
+.customer_detail_item {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.customer_detail_item label {
+    width: 20% !important;
+}
+
+.customer_button_delete {
+    margin: 0 20px 0 10px;
+}
