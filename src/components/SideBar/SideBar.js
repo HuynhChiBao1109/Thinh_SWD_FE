@@ -13,6 +13,7 @@ export const SideBar = () => {
     // decode token
     const [user, setUser] = useState(null);
 
+
     useEffect(() => {
         if (token) {
             const user = decodeToken(token);
@@ -23,6 +24,8 @@ export const SideBar = () => {
     }, [isChange])
 
     if (user === null) return null;
+
+    // ADMIN, CUSTOMER, EMPLOYEE
 
     return (
         <Nav className="col-md-12 d-none d-md-block bg-light Sidebar">
@@ -36,45 +39,68 @@ export const SideBar = () => {
                     : null
             }
 
-            <Nav.Item className="sidebar_item">
-                <i class="fa-solid fa-person"></i>
-                <Link className="sidebar_item" to='/employee'>Employee</Link>
-            </Nav.Item>
+            {
+                user && user.role === 'ADMIN' ?
+                    <Nav.Item className="sidebar_item">
+                        <i class="fa-solid fa-person"></i>
+                        <Link className="sidebar_item" to='/employee'>Employee</Link>
+                    </Nav.Item>
+                    : null
+            }
 
-            <Nav.Item className="sidebar_item">
-                <i class="fa-solid fa-person-military-pointing"></i>
-                <Link className="sidebar_item" to='/customer'>Customer</Link>
-            </Nav.Item>
+            {
+                user && (user.role === 'ADMIN' || user.role === 'EMPLOYEE') ?
+                    <Nav.Item className="sidebar_item">
+                        <i class="fa-solid fa-person-military-pointing"></i>
+                        <Link className="sidebar_item" to='/customer'>Customer</Link>
+                    </Nav.Item> : null
+            }
 
-            <Nav.Item className="sidebar_item">
-                <i class="fa-brands fa-slack"></i>
-                <Link className="sidebar_item" to='/storageAreas'>Storage Areas</Link>
-            </Nav.Item>
+            {
+                user && (user.role === 'ADMIN' || user.role === 'EMPLOYEE') ?
+                    <Nav.Item className="sidebar_item">
+                        <i class="fa-brands fa-slack"></i>
+                        <Link className="sidebar_item" to='/storageAreas'>Storage Areas</Link>
+                    </Nav.Item> : null
+            }
 
-            <Nav.Item className="sidebar_item">
-                <i class="fa-solid fa-filter"></i>
-                <Link className="sidebar_item" to='/category'>Category</Link>
-            </Nav.Item>
+            {
+                user && user.role === 'ADMIN' ?
+                    <Nav.Item className="sidebar_item">
+                        <i class="fa-solid fa-filter"></i>
+                        <Link className="sidebar_item" to='/category'>Category</Link>
+                    </Nav.Item> : null
+            }
 
-            <Nav.Item className="sidebar_item">
-                <i class="fa-solid fa-list"></i>
-                <Link className="sidebar_item" to='/shelve'>Shelve</Link>
-            </Nav.Item>
+            {
+                user && (user.role === 'ADMIN' || user.role === 'EMPLOYEE') ?
+                    <Nav.Item className="sidebar_item">
+                        <i class="fa-solid fa-list"></i>
+                        <Link className="sidebar_item" to='/shelve'>Shelve</Link>
+                    </Nav.Item> : null
+            }
 
-            <Nav.Item className="sidebar_item">
-                <i class="fa-solid fa-gears"></i>
-                <Link className="sidebar_item" to='/cell'>Cell</Link>
-            </Nav.Item>
+            {
+                user && (user.role === 'ADMIN' || user.role === 'EMPLOYEE') ?
+                    <Nav.Item className="sidebar_item">
+                        <i class="fa-solid fa-gears"></i>
+                        <Link className="sidebar_item" to='/cell'>Cell</Link>
+                    </Nav.Item> : null
+            }
 
             <Nav.Item className="sidebar_item">
                 <i class="fa-solid fa-shopping-cart"></i>
                 <Link className="sidebar_item" to='/order'>Order</Link>
             </Nav.Item>
 
-            <Nav.Item className="sidebar_item">
-                <i class="fa-solid fa-box"></i>
-                <Link className="sidebar_item" to='/rack'>Rack</Link>
-            </Nav.Item>
+            {
+                user && user.role === 'ADMIN' ?
+                    <Nav.Item className="sidebar_item">
+                        <i class="fa-solid fa-box"></i>
+                        <Link className="sidebar_item" to='/rack'>Rack</Link>
+                    </Nav.Item> : null
+            }
+
         </Nav>
     )
 }
