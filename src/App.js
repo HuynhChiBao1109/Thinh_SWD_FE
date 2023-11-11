@@ -11,6 +11,7 @@ import CategoryPage from './page/Category/Category.Page';
 import ShelvePage from './page/Shelve/Shelve.page';
 import CellPage from './page/Cell/Cell.page';
 import RackPage from './page/Rack/Rack.page';
+import OrderPage from './page/Order/Order.page';
 import { Header } from './components/Header/Header';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/shelve" element={<ShelvePage />} />
           <Route path="/cell" element={<CellPage />} />
           <Route path="/rack" element={<RackPage />} />
+          <Route path="/order" element={<OrderPage />} />
         </Routes>
       </BrowserRouter>
     </div>

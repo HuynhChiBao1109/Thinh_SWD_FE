@@ -1,2 +1,2 @@
-export const server = 'https://forwardingstationmanagementsystem.azurewebsites.net/api/v1'
+export const server = 'https://localhost:7112/api/v1'
 
